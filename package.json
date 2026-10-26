@@ -1,0 +1,13 @@
+{
+  "name": "asa-qunqing",
+  "private": true,
+  "description": "Local photo maintenance tools; the website itself needs no build or Node.js server.",
+  "scripts": {
+    "images:preview": "node scripts/compress-images.cjs",
+    "images:optimize": "node scripts/compress-images.cjs --apply",
+    "images:stats": "node scripts/image-sizes.cjs",
+    "albums": "python3 manage.py build"
+  },
+  "devDependencies": { "sharp": "0.35.5" },
+  "engines": { "node": ">=20.9.0" }
+}
